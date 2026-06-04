@@ -1,0 +1,15 @@
+# Heavy source originals — kept locally / in OneDrive, not needed for the live site
+compressed/
+Kelly Boi Logo.png
+mrpuffus.com_ (1).png
+
+# Old Netlify drag-and-drop folder (superseded by GitHub Pages)
+publish/
+
+# Local preview / screenshot scratch files
+_*.html
+_shots/
+
+# OS junk
+Thumbs.db
+.DS_Store

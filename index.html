@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelly Boi's Beer &amp; Smokes — Your Neighborhood Beer, Vape &amp; Smoke Shop</title>
+  <meta name="description"
+    content="Kelly Boi's Beer & Smokes — ice-cold beer, vapes, hookah & shisha, glass, cigars, CBD/Delta, snacks and more. Locally owned. Stop in today." />
+
+  <meta property="og:title" content="Kelly Boi's Beer & Smokes" />
+  <meta property="og:description" content="Ice-cold beer and the widest smoke selection in town. Locally owned." />
+  <meta property="og:type" content="business.business" />
+  <meta property="og:image" content="assets/storefront.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="preload" as="image" href="assets/logo.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===== 21+ Age gate ===== -->
+  <div class="age-gate" id="ageGate" hidden>
+    <div class="age-gate__card" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+      <img src="assets/logo.jpg" alt="Kelly Boi's Beer & Smokes" class="age-gate__logo" width="280" />
+      <h2 id="ageTitle">Are you 21 or older?</h2>
+      <p>You must be of legal age to enter. We sell tobacco, vapor, and alcohol products.</p>
+      <div class="age-gate__actions">
+        <button class="btn btn--primary" id="ageYes">Yes, I'm 21+</button>
+        <a class="btn btn--ghost" href="https://www.google.com" id="ageNo">No, take me back</a>
+      </div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container site-header__inner">
+      <a href="#top" class="brand" aria-label="Kelly Boi's Beer & Smokes — home">
+        <img src="assets/logo.jpg" alt="" class="brand__mark" width="120" height="68" />
+        <span class="brand__text">Kelly&nbsp;Boi's</span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#shop">Shop</a>
+        <a href="#brands">Brands</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit Us</a>
+        <a href="tel:+16017481360" class="nav__cta btn btn--primary">Call Now</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Locally owned · Open 7 days</p>
+          <h1 id="heroTitle">
+            Ice-cold beer.<br />
+            <span class="text-cyan">The widest smoke</span><br />
+            selection in town.
+          </h1>
+          <p class="hero__lede">
+            Beer, vapes, hookah, glass, cigars, CBD &amp; Delta, snacks and more —
+            all under one roof at Kelly Boi's. Walk in for the deal, stay for the
+            people.
+          </p>
+          <div class="hero__actions">
+            <a href="#visit" class="btn btn--primary btn--lg">Get Directions</a>
+            <a href="#shop" class="btn btn--outline btn--lg">See What We Carry</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>500+</strong><span>products in store</span></li>
+            <li><strong>21+</strong><span>vape &amp; tobacco</span></li>
+            <li><strong>7&nbsp;days</strong><span>a week</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__sign reveal" aria-hidden="true">
+          <img src="assets/logo.jpg" alt="Kelly Boi's Beer & Smokes neon sign" width="700" height="399" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Marquee banner ===== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>🍺 Ice-cold beer</span><span>💨 Vapes &amp; e-cigs</span><span>🫧 Hookah &amp; shisha</span>
+        <span>🔥 Glass &amp; accessories</span><span>🌿 CBD &amp; Delta</span><span>🚬 Cigars &amp; wraps</span>
+        <span>⚡ Energy &amp; snacks</span><span>🧢 Apparel</span>
+        <span>🍺 Ice-cold beer</span><span>💨 Vapes &amp; e-cigs</span><span>🫧 Hookah &amp; shisha</span>
+        <span>🔥 Glass &amp; accessories</span><span>🌿 CBD &amp; Delta</span><span>🚬 Cigars &amp; wraps</span>
+        <span>⚡ Energy &amp; snacks</span><span>🧢 Apparel</span>
+      </div>
+    </div>
+
+    <!-- ===== About ===== -->
+    <section class="about section" id="about" aria-labelledby="aboutTitle">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <img src="assets/storefront.jpg" alt="Inside Kelly Boi's — coolers, counter and shelves"
+            class="about__img about__img--main" loading="lazy" width="1600" height="1200" />
+          <img src="assets/counter.jpg" alt="Front counter with glass display cases"
+            class="about__img about__img--float" loading="lazy" width="1400" height="1050" />
+        </div>
+        <div class="about__copy reveal">
+          <p class="eyebrow">About the shop</p>
+          <h2 id="aboutTitle">A real neighborhood stop — not a chain.</h2>
+          <p>
+            Kelly Boi's Beer &amp; Smokes is your one-stop shop for everything from
+            an ice-cold six-pack to your next setup. We keep the coolers stocked,
+            the cases full, and the prices honest. Whether you know exactly what
+            you want or need a recommendation, we've got you.
+          </p>
+          <ul class="checks">
+            <li>Huge cold-beer wall — domestics, imports &amp; singles</li>
+            <li>Vapes, disposables, hookah, glass &amp; rolling papers</li>
+            <li>CBD, Delta, kratom &amp; smoke-odor products</li>
+            <li>Snacks, energy drinks &amp; everyday essentials</li>
+          </ul>
+          <a href="tel:+16017481360" class="btn btn--primary">Call Us Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Highlight banner ===== -->
+    <section class="banner" aria-label="Store highlight">
+      <div class="container">
+        <h2>The coldest beer and the widest smoke selection around.</h2>
+        <p>Locally owned and stocked daily — your neighbors behind the counter since day one.</p>
+      </div>
+    </section>
+
+    <!-- ===== Shop / Products ===== -->
+    <section class="shop section" id="shop" aria-labelledby="shopTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">What we carry</p>
+          <h2 id="shopTitle">Everything under one roof</h2>
+          <p class="section-sub">Eight aisles of good stuff. Here's the lineup.</p>
+        </header>
+
+        <ul class="products">
+          <li class="product reveal">
+            <img src="assets/beer.jpg" alt="Wall of beer coolers" loading="lazy" width="1400" height="1050" />
+            <div class="product__label">
+              <h3>Beer</h3><span>Domestic · Import · Singles</span>
+            </div>
+          </li>
+          <li class="product reveal">
+            <img src="assets/tobacco.jpg" alt="Vapes, cigarettes and wraps display" loading="lazy" width="1200"
+              height="900" />
+            <div class="product__label">
+              <h3>Vapes &amp; E-Cigs</h3><span>Disposables · Pods · Mods</span>
+            </div>
+          </li>
+          <li class="product reveal">
+            <img src="assets/hookah.jpg" alt="Hookahs and shisha display case" loading="lazy" width="1200"
+              height="900" />
+            <div class="product__label">
+              <h3>Hookah &amp; Shisha</h3><span>Kits · Bowls · Flavors</span>
+            </div>
+          </li>
+          <li class="product reveal">
+            <img src="assets/accessories.jpg" alt="Glass and smoking accessories case" loading="lazy" width="1200"
+              height="900" />
+            <div class="product__label">
+              <h3>Glass &amp; Accessories</h3><span>Pieces · Grinders · Trays</span>
+            </div>
+          </li>
+          <li class="product reveal">
+            <img src="assets/tobacco.jpg" alt="Cigars, cigarettes and rolling papers" loading="lazy" width="1200"
+              height="900" />
+            <div class="product__label">
+              <h3>Cigars &amp; Wraps</h3><span>RAW · Black &amp; Mild · Dutch</span>
+            </div>
+          </li>
+          <li class="product reveal">
+            <img src="assets/accessories.jpg" alt="CBD and Delta products" loading="lazy" width="1200" height="900" />
+            <div class="product__label">
+              <h3>CBD &amp; Delta</h3><span>Edibles · Carts · Kratom</span>
+            </div>
+          </li>
+          <li class="product reveal">
+            <img src="assets/snacks.jpg" alt="Snacks, chips and energy drinks" loading="lazy" width="1200"
+              height="900" />
+            <div class="product__label">
+              <h3>Snacks &amp; Drinks</h3><span>Energy · Soda · Munchies</span>
+            </div>
+          </li>
+          <li class="product reveal">
+            <img src="assets/apparel.jpg" alt="Hats, shirts and apparel" loading="lazy" width="1200" height="900" />
+            <div class="product__label">
+              <h3>Apparel</h3><span>Hats · Tees · Gloves</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Brands marquee ===== -->
+    <section class="brands section" id="brands" aria-labelledby="brandsTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Names you know</p>
+          <h2 id="brandsTitle">Brands we stock</h2>
+        </header>
+      </div>
+      <div class="brand-marquee" aria-hidden="true">
+        <div class="brand-marquee__track">
+          <span>Budweiser</span><span>Bud Light</span><span>Michelob Ultra</span><span>Corona</span>
+          <span>Modelo</span><span>Natural Light</span><span>Busch</span><span>RAW</span>
+          <span>Black &amp; Mild</span><span>Dutch</span><span>Red Bull</span><span>Pepsi</span>
+          <span>Budweiser</span><span>Bud Light</span><span>Michelob Ultra</span><span>Corona</span>
+          <span>Modelo</span><span>Natural Light</span><span>Busch</span><span>RAW</span>
+          <span>Black &amp; Mild</span><span>Dutch</span><span>Red Bull</span><span>Pepsi</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reviews ===== -->
+    <section class="reviews section" id="reviews" aria-labelledby="reviewsTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Word on the street</p>
+          <h2 id="reviewsTitle">What our regulars say</h2>
+        </header>
+        <ul class="review-grid">
+          <li class="review reveal">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"Best beer prices in the area and the smoke selection is unreal. The staff actually knows their stuff and
+              hooks it up every time."</p>
+            <footer><span class="review__name">Marcus T.</span><span class="review__date">Local Guide</span></footer>
+          </li>
+          <li class="review reveal">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"My go-to stop. Coolers are always cold, they've got every brand I want, and checkout is quick. Can't
+              beat it."</p>
+            <footer><span class="review__name">Destiny R.</span><span class="review__date">Regular</span></footer>
+          </li>
+          <li class="review reveal">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"Friendly people, fair prices, and they carry stuff nobody else around here does. This is how a corner
+              shop should be run."</p>
+            <footer><span class="review__name">Jordan K.</span><span class="review__date">Regular</span></footer>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Visit Us ===== -->
+    <section class="visit section" id="visit" aria-labelledby="visitTitle">
+      <div class="container visit__grid">
+        <div class="visit__info reveal">
+          <p class="eyebrow">Come see us</p>
+          <h2 id="visitTitle">Visit Kelly Boi's</h2>
+
+          <dl class="visit__details">
+            <div>
+              <dt>Address</dt>
+              <dd>1200 Lasalle St #24<br />McComb, MS 39648</dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+16017481360">(601) 748-1360</a></dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd>
+                Mon–Thu: 9am – 11pm<br />
+                Fri–Sat: 9am – 12am<br />
+                Sunday: 10am – 10pm
+              </dd>
+            </div>
+          </dl>
+
+          <div class="visit__actions">
+            <a href="https://maps.google.com/?q=1200+Lasalle+St+%2324,+McComb,+MS+39648" target="_blank" rel="noopener"
+              class="btn btn--primary">Open in Maps</a>
+            <a href="tel:+16017481360" class="btn btn--outline">Call the Store</a>
+          </div>
+        </div>
+
+        <div class="visit__map reveal">
+          <iframe title="Map to Kelly Boi's Beer & Smokes"
+            src="https://www.google.com/maps?q=1200+Lasalle+St+%2324,+McComb,+MS+39648&output=embed" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="assets/logo.jpg" alt="Kelly Boi's Beer & Smokes" width="220" />
+        <p class="tagline">Stay cold. Stay lit.</p>
+      </div>
+
+      <nav class="site-footer__col" aria-label="Shop">
+        <h3>Shop</h3>
+        <a href="#shop">Beer</a>
+        <a href="#shop">Vapes &amp; E-Cigs</a>
+        <a href="#shop">Hookah &amp; Shisha</a>
+        <a href="#shop">Glass &amp; Accessories</a>
+        <a href="#shop">CBD &amp; Delta</a>
+      </nav>
+
+      <nav class="site-footer__col" aria-label="Visit">
+        <h3>Visit</h3>
+        <a href="#about">About Us</a>
+        <a href="#visit">Hours &amp; Location</a>
+        <a href="#reviews">Reviews</a>
+        <a href="tel:+16017481360">Call the Store</a>
+      </nav>
+
+      <div class="site-footer__col">
+        <h3>Hours</h3>
+        <p>Mon–Thu: 9am – 11pm<br />Fri–Sat: 9am – 12am<br />Sun: 10am – 10pm</p>
+      </div>
+    </div>
+
+    <div class="site-footer__bar">
+      <div class="container site-footer__bar-inner">
+        <p>© <span id="year">2026</span> Kelly Boi's Beer &amp; Smokes. All rights reserved.</p>
+        <p class="legal">Must be 21+ to purchase tobacco, vapor &amp; alcohol. Please enjoy responsibly.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
