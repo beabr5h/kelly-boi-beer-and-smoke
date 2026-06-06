@@ -333,6 +333,79 @@ h1, h2, h3 {
 }
 .legal { max-width: 60ch; }
 
+/* ---------- Stoney Baloney THCa spotlight ---------- */
+.text-lime { color: var(--lime); text-shadow: 0 0 22px rgba(138, 209, 31, 0.4); }
+.eyebrow--lime { color: var(--lime); }
+
+.btn--lime { background: var(--lime); color: #0e1a02; box-shadow: 0 0 24px rgba(138, 209, 31, 0.35); }
+.btn--lime:hover { background: #9be62a; box-shadow: 0 0 32px rgba(138, 209, 31, 0.55); }
+
+.stoney {
+  position: relative; overflow: hidden;
+  background: linear-gradient(180deg, var(--bg) 0%, #0c1407 55%, var(--bg) 100%);
+}
+.stoney__glow {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(38% 45% at 22% 30%, rgba(138, 209, 31, 0.16), transparent 70%),
+    radial-gradient(30% 40% at 85% 70%, rgba(138, 209, 31, 0.10), transparent 70%);
+}
+.stoney .container { position: relative; z-index: 1; }
+.stoney__inner {
+  display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center;
+}
+
+.stoney__badge { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.stoney__badge img {
+  width: min(320px, 70%); border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(138, 209, 31, 0.5), 0 0 60px -8px rgba(138, 209, 31, 0.55);
+  animation: floaty 7s ease-in-out infinite;
+}
+.stoney__site {
+  font-weight: 600; font-size: var(--step--1); letter-spacing: 0.04em; color: var(--lime);
+  text-transform: uppercase;
+}
+.stoney__site:hover { color: #b6f24f; }
+
+.stoney h2 { font-size: var(--step-3); margin-bottom: 1.2rem; }
+.stoney__lede { color: var(--ink-soft); font-size: var(--step-1); max-width: 46ch; }
+
+.stoney__chips { list-style: none; padding: 0; margin: 1.6rem 0 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.stoney__chips li {
+  font-size: var(--step--1); font-weight: 600; letter-spacing: 0.02em;
+  padding: 0.35em 0.85em; border: 1px solid rgba(138, 209, 31, 0.4); border-radius: 999px;
+  color: var(--ink); background: rgba(138, 209, 31, 0.06);
+}
+.stoney__chips li:last-child { color: var(--lime); border-style: dashed; }
+
+.stoney__features {
+  list-style: none; padding: 0; margin: 1.4rem 0 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.6rem;
+}
+.stoney__features li { position: relative; padding-left: 1.6rem; color: var(--ink-soft); font-size: var(--step--1); }
+.stoney__features li::before { content: "✓"; position: absolute; left: 0; color: var(--lime); font-weight: 700; }
+
+.stoney__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+.stoney__note { margin-top: 1.1rem; font-size: var(--step--1); color: var(--ink-dim); }
+
+.stoney__display {
+  margin: clamp(2.5rem, 5vw, 4rem) auto 0; width: min(100% - 2.5rem, var(--maxw));
+  position: relative; z-index: 1; border-radius: var(--radius-lg); overflow: hidden;
+  border: 1px solid var(--line); box-shadow: var(--shadow);
+}
+.stoney__display img { width: 100%; height: auto; display: block; }
+.stoney__display figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 1.4rem 1.2rem 0.9rem;
+  font-weight: 600; letter-spacing: 0.03em; color: var(--ink); text-transform: uppercase; font-size: var(--step--1);
+  background: linear-gradient(to top, rgba(8, 9, 11, 0.92), transparent);
+}
+
+@media (max-width: 940px) {
+  .stoney__inner { grid-template-columns: 1fr; text-align: center; }
+  .stoney__lede { margin-inline: auto; }
+  .stoney__chips, .stoney__features, .stoney__actions { justify-content: center; }
+  .stoney__badge img { width: 220px; }
+}
+
 /* ---------- Age gate ---------- */
 .age-gate {
   position: fixed; inset: 0; z-index: 300; display: grid; place-items: center;
