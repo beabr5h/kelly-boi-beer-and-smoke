@@ -328,10 +328,28 @@ h1, h2, h3 {
 .site-footer__col p { color: var(--ink-soft); }
 .site-footer__bar { border-top: 1px solid var(--line); }
 .site-footer__bar-inner {
-  display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; justify-content: space-between;
-  padding-block: 1.4rem; font-size: var(--step--1); color: var(--ink-dim);
+  display: flex; flex-wrap: wrap; gap: 0.6rem 1.5rem; justify-content: space-between; align-items: center;
+  padding: 1.4rem 0 0.8rem; font-size: var(--step--1); color: var(--ink-dim);
 }
-.legal { max-width: 60ch; }
+.footer-copy { margin: 0; }
+.legal { max-width: 70ch; padding-bottom: 1.4rem; font-size: var(--step--1); color: var(--ink-dim); }
+
+/* Powered by BGS credit */
+.powered-by {
+  display: inline-flex; align-items: center; gap: 0.55rem;
+  font-size: var(--step--1); color: var(--ink-dim); letter-spacing: 0.04em;
+  transition: color 0.2s; white-space: nowrap;
+}
+.powered-by__label { text-transform: uppercase; }
+.powered-by__mark { width: 30px; height: auto; color: #2ecc8f; flex: none; transition: filter 0.25s; }
+.powered-by__brand {
+  font-family: var(--font-display); font-size: 1.35rem; line-height: 1; letter-spacing: 0.06em; color: var(--ink);
+  transition: color 0.2s;
+}
+.powered-by:hover { color: var(--ink-soft); }
+.powered-by:hover .powered-by__brand { color: #2ecc8f; }
+.powered-by:hover .powered-by__mark { filter: drop-shadow(0 0 6px rgba(46, 204, 143, 0.6)); }
+.powered-by:focus-visible { outline: 2px solid #2ecc8f; outline-offset: 4px; border-radius: 4px; }
 
 /* ---------- Stoney Baloney THCa spotlight ---------- */
 .text-lime { color: var(--lime); text-shadow: 0 0 22px rgba(138, 209, 31, 0.4); }
